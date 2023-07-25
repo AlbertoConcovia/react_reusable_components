@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Accordion } from "./Accordion";
+import { items } from "./AccordionItemsArray"
+
+const accordionClassName = "accordion";
+const accordionContainerCx = "accordionContainer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>App</h2>
+      <Accordion
+        items={items}
+        accordionClassName={accordionClassName}
+        accordionContainerCx={accordionContainerCx}
+      >
+        texto Children
+      </Accordion>
     </div>
   );
 }

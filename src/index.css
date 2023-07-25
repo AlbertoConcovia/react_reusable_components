@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.accordionContainer{
+  border: 5px solid blue;
+  width: 600px;
+  display: "flex";
+  align-items: "center";
+  height: "100%"
+}
+
+.accordion{
+  border: 5px solid green;
+  width: 400px;
+  margin: 10px;
+}
